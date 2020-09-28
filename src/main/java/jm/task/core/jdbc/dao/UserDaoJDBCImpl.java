@@ -15,7 +15,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 
 public class UserDaoJDBCImpl implements UserDao {
-    private static final Logger logger = Logger.getLogger(Util.class.getName());
+    private static final Logger logger = Logger.getLogger(UserDaoJDBCImpl.class.getName());
 
     public UserDaoJDBCImpl() {
 
