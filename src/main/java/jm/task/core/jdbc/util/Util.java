@@ -23,6 +23,7 @@ public class Util {
     public static final String DIALECT = "org.hibernate.dialect.MySQLDialect";
     public static final String HBM2DDL = "update";
     public static final String SHOW_SQL = "true";
+    public static final String CONNECTION_POOL_TIMEOUT = "0";
 
     public static Connection getConnection() {
         Connection connection = null;
@@ -45,6 +46,7 @@ public class Util {
         properties.setProperty(Environment.DIALECT, DIALECT);
         properties.setProperty(Environment.HBM2DDL_AUTO, HBM2DDL);
         properties.setProperty(Environment.SHOW_SQL, SHOW_SQL);
+        properties.setProperty(Environment.C3P0_TIMEOUT, CONNECTION_POOL_TIMEOUT);
 
         Configuration configuration = new Configuration();
         configuration.setProperties(properties);
